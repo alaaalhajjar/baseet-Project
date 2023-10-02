@@ -1,0 +1,168 @@
+/*--------Start navbar syle-----*/
+:root {
+    --blue: #153679;
+    --green:#2B9D6A;
+  }
+.navbar {
+    background-color: #fff;
+    direction: rtl;
+    height: 100px;
+}
+.logo-container{
+    display: flex;
+ }
+.navbar-logo{
+        border-radius: 50%;
+        border: none;
+        width: 48px;
+        height: 48px;
+    }  
+.navbar span{
+        color: var(--blue);
+        font-size: 32px;
+        font-weight: 500;
+}
+.menu-ul{
+    list-style-type: none;
+    margin-right: 40px;
+}
+
+.navbar .navbar-toggler i{
+    color: white;
+    border-color: none;
+}
+
+.navbar .navbar-toggler i:focus{
+    box-shadow: none;
+}
+
+.collapse .navbar-nav .nav-item a{
+    position: relative;
+    white-space: nowrap;
+    color: #767676;
+    font-family: 'Tajawal';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding:40px 20px;
+}
+.navbar .navbar-nav .nav-item-page :focus{
+    color: var(--green);
+    font-weight: 700;
+    font-size: 18px;
+    position: relative;
+    top:-7px;
+}
+
+.collapse .navbar-nav .nav-item-page a:focus::after,
+.collapse .navbar-nav .nav-item-page a:visited::after{
+    content:"";
+    display: block;
+    width: 24px;
+    height: 4px;
+    position: absolute;
+    left: 40px;
+    background-color: var(--green);
+    border-radius:8px ;
+}
+
+.collapse .navbar-nav .nav-item a:hover{
+    color: #2B9D6A;
+}
+
+#navbarSupportedContent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-nav button {
+    outline: none; 
+    display: flex;
+    padding: 13px 24px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid var(--blue);  
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    margin: 26px 8px;
+}
+.left-nav .login-btn button {
+    color: var(--blue);
+    background-color: white;
+    /* margin:26px  0px 26px 8px; */
+}
+.left-nav .login-btn button:hover{
+   background: #153679;
+   color: white;
+}
+
+.left-nav .signup-btn button{
+  color: white;
+   background: var(--blue);
+
+}
+.left-nav .signup-btn button:hover{
+  background: #022366;
+}
+/* 
+.sidebar {
+    flex: 1 1 0;
+    z-index: 1000;
+    width:75% !important;
+    padding: 3rem 0;
+    width: 75%;
+    background-color: #FCFCFC;
+}
+.sidebar .close-sidebar{
+    font-size: 24px;
+    display: flex;
+    margin-left: 30px;
+    margin-top: -10px;
+    justify-content: left;
+}
+.sidebar .menu {
+    margin: 20px;
+}
+.sidebar .menu .dropdown-menu{
+    position:unset !important;
+    border: none;
+    background-color: #fff;
+    margin-right: 20px;
+    list-style-type:circle;
+}
+
+.sidebar .menu .menu-item {
+    display: block;
+    padding:20px;
+    text-decoration: none;
+    transition: 0.2s linear;
+    color: #FFF;
+    font-size: 16px;
+    color: #838383;
+    font-weight: 500;
+}
+
+.sidebar .menu .menu-item:hover,
+.sidebar .menu .menu-item:active,
+.menu-ul .dropdown-menu li:hover{
+
+    border-radius: 8px;
+    background: #E16F3D;
+    color: #fff;
+    font-weight: 700;
+} */
+
+
+/*-------- End navbar syle-----*/
+
+ @media (min-width:992px) and (max-width:1200px){
+  .navbar span{
+     display: none;
+    }
+ 
+} 
