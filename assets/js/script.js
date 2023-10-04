@@ -46,41 +46,7 @@ $(document).ready(function() {
 });
 
   
-
-        ///////Register page js ////////
-
-
-        //show password 
-        // function togglePasswordVisibility() {
-        //     var passwordField = document.getElementById("password");
-        //     var showPasswordButton = document.getElementById("showPasswordButton");
-
-        //     if (passwordField.type === "password") {
-        //         passwordField.type = "text";
-        //         showPasswordButton.textContent = "Hide Password";
-        //     } else {
-        //         passwordField.type = "password";
-        //         showPasswordButton.textContent = "Show Password";
-        //     }
-        // }
- const togglePassword = document.querySelector('#eye');
-  const password = document.querySelector('#userPassword');
-
-  togglePassword.addEventListener('click', function (e) {
-    // toggle the type attribute
-    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-    password.setAttribute('type', type);
-    // toggle the eye slash icon
-    this.classList.toggle('fa-eye-slash');
-});
-
-
-const togglelginPassword = document.querySelector('#logineye');
-const loginpassword = document.querySelector('#Password');
-togglelginPassword.addEventListener('click', function (e) {
-  // toggle the type attribute
-  const type = loginpassword.getAttribute('type') === 'password' ? 'text' : 'password';
-  loginpassword.setAttribute('type', type);
-  // toggle the eye slash icon
-  this.classList.toggle('fa-eye-slash');
-});
+let ele =document.querySelectorall(".price-model-section .price-cards .single-card");
+ele.addEventListener((e) =>{
+ 
+})
