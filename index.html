@@ -37,11 +37,11 @@
       rel="stylesheet"
       href="assets/libs/owlcarousel/assets/owl.theme.default.min.css"
     />
-    <link
+    <!-- <link
       rel="shortcut icon"
       href="assets/images/shortcutLogo.svg"
       type="image/svg+xml"
-    />
+    /> -->
     <title>Document</title>
   </head>
   <body>
@@ -52,12 +52,18 @@
           <span> بسيط</span>
         </div>
 
-        <!-- <aside class="sidebar d-lg-none">
+        <aside class="sidebar">
           <div class="close-sidebar">
             <i class="fa-solid fa-xmark" style="color: #000000"></i>
           </div>
           <nav class="menu">
-            <ul class="menu-ul  ">
+            <ul class="menu-ul">
+              <li class="nav-item login-btn">
+                <button>تسجيل الدخول</button>
+              </li>
+              <li class="nav-item signup-btn">
+                <button>اشتراك الآن</button>
+              </li>
               <li><a href="#" class="menu-item">المزايا</a></li>
               <li><a href="#" class="menu-item">كن شريكا </a></li>
               <li><a href="#" class="menu-item">المدونة </a></li>
@@ -65,7 +71,7 @@
               <li><a href="#" class="menu-item">الأسعار</a></li>
             </ul>
           </nav>
-        </aside>  -->
+        </aside> 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <div class="right-nav d-none d-lg-block">
             <ul class="navbar-nav">
@@ -246,7 +252,7 @@
         </div>
       </div>
     </section>
-    <section class="fifth-section">
+    <section class="Customer-Section">
       <div class="container">
         <h5>شرائح العملاء</h5>
         <div class="row">
@@ -301,45 +307,49 @@
           الأخرى لتسهيل تبادل البيانات و لتوفير و الوقت و الجهد
         </p>
 
-        <div class="row">
+        
           <div class="links-container">
             <div class="frame">
               <img src="assets/images/frame1.png" alt="" />
-            </div>
+            </div> 
+
             <div class="frame">
               <img src="assets/images/frame2.png" alt="" />
-            </div>
+           </div>
             <div class="frame">
               <img src="assets/images/frame3.png" alt="" />
             </div>
+
             <div class="frame">
               <img src="assets/images/frame4.png" alt="" />
             </div>
+
             <div class="frame">
               <img src="assets/images/frame5.png" alt="" />
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="links-container">
+
             <div class="frame">
               <img src="assets/images/frame6.png" alt="" />
             </div>
+            
             <div class="frame">
               <img src="assets/images/frame7.png" alt="" />
             </div>
+      
             <div class="frame">
               <img src="assets/images/frame8.png" alt="" />
             </div>
+
             <div class="frame">
               <img src="assets/images/frame9.png" alt="" />
             </div>
+
             <div class="frame">
               <img src="assets/images/frame10.png" alt="" />
             </div>
+
           </div>
-        </div>
-      </div>
+          </div>     
     </section>
     <section class="seven-section">
       <h4>ماذا يقول <span>مستخدمينا</span> عنا ؟</h4>
@@ -489,11 +499,12 @@
         <span class="slider"></span>
         <span class="label-on">شهري</span>
         <span class="label-off">سنوياً</span>
+  
       </label>
       <div class="price-cards">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-12">
+            <div class="owl-three owl-carousel owl-theme">
+            <div class="item">
               <div class="single-card" id="trail-version">
                 <h4>الاشتراك التجريبي</h4>
                 <h5>شهر مجاني</h5>
@@ -528,10 +539,10 @@
                 <button>اشترك الآن</button>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="single-card" id="year-version">
+            <div class="item">
+              <div class="single-card active" id="year-version">
                 <h4>الاشتراك السنوي</h4>
-                <h5>99.9 ريال</h5>
+                <h5>99.9 <span>ريال</span></h5>
 
                 <ul>
                   <h6>تشمل العديد من المزايا</h6>
@@ -563,10 +574,10 @@
                 <button>اشترك الآن</button>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12">
+            <div class="item">
               <div class="single-card" id="month-version">
                 <h4>الاشتراك الشهري</h4>
-                <h5>49.9 ريال</h5>
+                <h5>49.9  <span>ريال</span></h5>
 
                 <ul>
                   <h6>تشمل العديد من المزايا</h6>
@@ -617,6 +628,70 @@
       </div>
     </section>
 
+    <section class="container">
+      <div class="btn d-none d-lg-block" id="btn">
+        <div class="whatsBtn"><svg  xmlns="http://www.w3.org/2000/svg" id="whatsBtn"width="36" height="36" viewBox="0 0 40 40" fill="green">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M32.9172 5.44969C29.4089 1.93728 24.7431 0.00205078 19.7724 0C9.53003 0 1.19414 8.33566 1.19004 18.5808C1.18863 21.8559 2.04416 25.0529 3.67037 27.8709L1.03418 37.5L10.885 34.9159C13.5993 36.3965 16.6551 37.1768 19.7649 37.1777H19.7727C30.014 37.1777 38.3508 28.8414 38.3547 18.5957C38.3568 13.6304 36.4257 8.96191 32.9172 5.44969ZM19.7724 34.0394H19.766C16.9948 34.0383 14.2768 33.2935 11.9051 31.8866L11.3414 31.5517L5.49574 33.0852L7.05597 27.3858L6.68859 26.8015C5.14254 24.3424 4.32609 21.5002 4.3275 18.5819C4.33072 10.0664 11.2594 3.1384 19.7787 3.1384C23.904 3.13974 27.782 4.74832 30.6979 7.66769C33.6138 10.5871 35.2188 14.4676 35.2174 18.5945C35.2138 27.1107 28.2855 34.0394 19.7724 34.0394ZM28.2443 22.472C27.7801 22.2395 25.4972 21.1166 25.0715 20.9614C24.6462 20.8065 24.3363 20.7293 24.0271 21.1939C23.7174 21.6586 22.8278 22.7045 22.5568 23.0142C22.2858 23.3242 22.0152 23.363 21.5508 23.1305C21.0865 22.8982 19.5905 22.4077 17.8169 20.8259C16.4367 19.5947 15.505 18.0743 15.234 17.6097C14.9634 17.1446 15.2316 16.9175 15.4376 16.6621C15.9402 16.0379 16.4436 15.3835 16.5983 15.0739C16.7532 14.7639 16.6757 14.4927 16.5594 14.2604C16.4436 14.0281 15.515 11.7427 15.1282 10.8128C14.751 9.90779 14.3685 10.03 14.0834 10.0158C13.8128 10.0023 13.5032 9.99955 13.1935 9.99955C12.884 9.99955 12.3809 10.1156 11.9552 10.5807C11.5297 11.0456 10.3304 12.1687 10.3304 14.4541C10.3304 16.7395 11.9941 18.9472 12.2262 19.2571C12.4583 19.5671 15.5004 24.2568 20.1579 26.2678C21.2657 26.7466 22.1304 27.032 22.8049 27.246C23.9173 27.5994 24.9292 27.5495 25.7293 27.43C26.6215 27.2966 28.4761 26.3067 28.8634 25.2222C29.2502 24.1376 29.2502 23.2081 29.1339 23.0142C29.0181 22.8206 28.7085 22.7045 28.2443 22.472Z" fill="white"/>
+        </svg>
+      </div>
+           <div class="moveBtn" id="moveBtnbg">
+              <svg xmlns="http://www.w3.org/2000/svg" id="moveBtn"width="36" height="36" viewBox="0 0 36 36" fill="none">
+                  <path d="M23.2951 24.3896L18.0001 19.1096L12.7051 24.3896" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M23.2951 16.8896L18.0001 11.6096L12.7051 16.8896" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+          </div>
+           
+      </div>
+
+  </section>
+    <footer class="footer-tag">
+ 
+    <div class="container">
+          <div class="row" id="main_footer">
+            <div class=" logo"><img src="assets/images/logo.png" class="navbar-brand "alt=""></div>
+         <div class="col-2"></div>
+              <div class="col-4">
+                  <ul class="list-unstyled">
+                      <li class=""><a href="#">المزايا</a></li>
+                      <li class=""><a href="#">المدونة</a></li>
+                      <li class=""><a href="#">المصادر</a></li>
+                      <li class=""><a href="#">الأسعار</a></li>
+                  </ul>
+              </div>
+              
+              <div class="col-4">
+                  <ul class="list-unstyled">
+                      <li class=""><a href="#">الأسئلة الشائعة</a> </li>
+                      <li class=""><a href="#">سياسة الخصوصية</a> </li>
+                      <li class=""><a href="#">الشروط والأحكام</a> </li>
+                      <li class=""><a href="#">سياسة الاسترداد</a> </li>
+                  </ul>
+              </div>
+              
+          </div>
+     </div>
+     <div class="container">
+          <hr class="hr">
+      </div> 
+      
+        <div class="container">
+          <div class="footer_sub">
+          <p> جميع الحقوق محفوظة لصالح لسن &COPY; <span id="year"></span> </p>
+          <div class="icons">
+            <a href="" class="phone-num">+1 740 971 2699</a> 
+            <div>
+             <a href=""><i class="fa-brands fa-whatsapp"></i></a> 
+             <a href=""><i class="fa-brands fa-facebook"></i></a> 
+             <a href=""><i class="fa-brands fa-linkedin"></i></a> 
+              <a href=""><i class="fa-brands fa-twitter"></i></a> 
+          </div>
+      </div>
+          </div>
+      </div>
+      </div>
+      </div>
+
+  </footer>
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
@@ -657,6 +732,30 @@
         margin: 40,
         nav: false,
         dots: false,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: false,
+        responsive: {
+          300: {
+            items: 1,
+          },
+          700: {
+            items: 2,
+          },
+          992: {
+            items: 2,
+          },
+          1200: {
+            items: 3,
+          },
+        },
+      });
+      $(".owl-three").owlCarousel({
+        loop: false,
+        rtl: true,
+        margin: 40,
+        nav: false,
+        dots: false,
         autoplay: false,
         autoplayTimeout: 2000,
         autoplayHoverPause: false,
@@ -664,13 +763,10 @@
           300: {
             items: 1,
           },
-          765: {
+          700: {
             items: 2,
           },
-          992: {
-            items: 3,
-          },
-          1100: {
+          1200: {
             items: 3,
           },
         },
